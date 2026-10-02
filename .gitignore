@@ -14,3 +14,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Gradle wrapper (generate locally with `gradle wrapper`)
+/gradlew
+/gradlew.bat
+/gradle/wrapper/

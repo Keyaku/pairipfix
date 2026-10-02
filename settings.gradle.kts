@@ -16,12 +16,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url = uri("https://api.xposed.info/")
-        }
     }
 }
 
 rootProject.name = "io.github.ahmedmani.pairipfixio.github.ahmedmani.pairipfix"
-include(":app")
+include(":app", ":xposed-api")
  

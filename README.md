@@ -22,3 +22,14 @@ each time a protected method is called a vm code file is loaded from the app sto
 
 Currently the module is detected on some devices, while it works flawlessly on others, if the app instant crashes when you open it, try [BetterKnownInstalled](https://github.com/Pixel-Props/BetterKnownInstalled).
  
+
+# building
+
+The Gradle wrapper is not committed. Generate it with a locally installed Gradle (8.13+), then build:
+
+```sh
+gradle wrapper --gradle-version 8.13
+./gradlew assembleRelease
+```
+
+The Xposed API is provided as compile-only stubs in `xposed-api/`; LSPosed supplies the real implementation at runtime.
